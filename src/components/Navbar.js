@@ -1,11 +1,11 @@
 import React from "react";
+import "../styles/navbar.css";
 
 function Navbar() {
   return (
     <div
       className="sr-navbar"
       style={{
-        backgroundColor: "red",
         display: "flex",
         padding: 40,
         justifyContent: "space-between",

@@ -1,0 +1,8 @@
+.srn-2 > *:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.srn-1:hover{
+    cursor: pointer;
+}
