@@ -1,4 +1,5 @@
 import "./App.css";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         height: "100vh",
       }}
     >
-      hi
+      <Navbar />
     </div>
   );
 }
