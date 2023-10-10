@@ -12,7 +12,7 @@ function Navbar() {
       }}
     >
       <div className="srn-1" style={{ paddingLeft: 60 }}>
-        <a href="#" style={{ color: "black", textDecoration: "none" }}>
+        <a href="/" style={{ color: "black", textDecoration: "none" }}>
           <b style={{ fontSize: 50 }}>SR</b>
         </a>
       </div>
