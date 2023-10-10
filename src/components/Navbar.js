@@ -12,7 +12,9 @@ function Navbar() {
       }}
     >
       <div className="srn-1" style={{ paddingLeft: 60 }}>
-        <b style={{ fontSize: 50 }}>SR</b>
+        <a href="#" style={{ color: "black", textDecoration: "none" }}>
+          <b style={{ fontSize: 50 }}>SR</b>
+        </a>
       </div>
       <div
         className="srn-2"
@@ -25,10 +27,10 @@ function Navbar() {
           top: 14,
         }}
       >
-        <span>about</span>
-        <span>contact</span>
-        <span>work</span>
-        <span>playground</span>
+        <a href="/about">about</a>
+        <a href="/contact">contact</a>
+        <a href="/work">work</a>
+        <a href="/playground">playground</a>
       </div>
     </div>
   );
