@@ -3,16 +3,16 @@ import "../../styles/Navbar/navbar.css"
 
 function Navbar() {
   return (
-    <nav className="navbar">
-      <h2>Saby.</h2>
+    <div className="navbar" style={{display:"flex",justifyContent:"space-between"}}>
+      <div>Portfolio</div>
 
-      <div>
+      <div className="links" style={{display:"flex",justifyContent:"space-evenly",width:"30%"}}>
         <Link to="/">Home</Link>
         <Link to="/projects">Projects</Link>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
       </div>
-    </nav>
+    </div>
   );
 }
 
