@@ -10,9 +10,9 @@ function Navbar() {
   };
   return (
     <>
-    <div className="navbar" style={{ borderBottom:"1px solid lightgray", display: "flex", justifyContent: "space-between", backgroundColor: "white", height: "12vh" }}>
+    <div className="navbar">
       <div
-        className="heading1"
+        className="navbar-heading1"
         style={{
           padding: "1rem",
           fontSize: 24,

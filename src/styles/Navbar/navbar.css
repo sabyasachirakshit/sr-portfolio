@@ -1,0 +1,18 @@
+.navbar{
+    border-bottom:"1px solid lightgray";
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 12vh;
+}
+
+.navbar-heading1{
+    padding: 1rem;
+    font-size: 24;
+    margin-left: 1rem;
+    color: transparent;
+    font-weight: 700;
+    color: #4f46e5;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
