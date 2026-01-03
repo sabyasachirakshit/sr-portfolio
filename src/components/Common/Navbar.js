@@ -17,7 +17,25 @@ function Navbar() {
           display: "inline-block"
         }}
       >
-        Portfolio
+        <span
+          style={{
+            background: "linear-gradient(90deg, #4f46e5, #6366f1)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent"
+          }}
+        >
+          Port
+        </span>
+
+        <span
+          style={{
+            background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent"
+          }}
+        >
+          folio
+        </span>
       </div>
       <div className="links" style={{ display: "flex", justifyContent: "space-evenly", width: "30%", padding: "1rem" }}>
         <Link to="/">Home</Link>
