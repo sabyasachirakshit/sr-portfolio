@@ -17,19 +17,24 @@ function Navbar() {
         {/* DESKTOP LINKS */}
         {!isMobile && (
           <div className="links">
-            <Link to="/" className="link-style">Home</Link>
-            <Link to="/projects" className="link-style">Projects</Link>
-            <Link to="/about" className="link-style">About</Link>
-            <Link to="/contact" className="link-style">Contact</Link>
+            <Link to="/" className="link-style">
+              Home
+            </Link>
+            <Link to="/projects" className="link-style">
+              Projects
+            </Link>
+            <Link to="/about" className="link-style">
+              About
+            </Link>
+            <Link to="/contact" className="link-style">
+              Contact
+            </Link>
           </div>
         )}
 
         {/* MOBILE HAMBURGER / CLOSE ICON */}
         {isMobile && (
-          <div
-            className="hamburger"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
+          <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? "✕" : "☰"}
           </div>
         )}
@@ -38,10 +43,34 @@ function Navbar() {
       {/* MOBILE MENU */}
       {isMobile && menuOpen && (
         <div className="mobile-menu">
-          <Link to="/" className="mobile-link" onClick={() => setMenuOpen(false)}>Home</Link>
-          <Link to="/projects" className="mobile-link" onClick={() => setMenuOpen(false)}>Projects</Link>
-          <Link to="/about" className="mobile-link" onClick={() => setMenuOpen(false)}>About</Link>
-          <Link to="/contact" className="mobile-link" onClick={() => setMenuOpen(false)}>Contact</Link>
+          <Link
+            to="/"
+            className="mobile-link"
+            onClick={() => setMenuOpen(false)}
+          >
+            Home
+          </Link>
+          <Link
+            to="/projects"
+            className="mobile-link"
+            onClick={() => setMenuOpen(false)}
+          >
+            Projects
+          </Link>
+          <Link
+            to="/about"
+            className="mobile-link"
+            onClick={() => setMenuOpen(false)}
+          >
+            About
+          </Link>
+          <Link
+            to="/contact"
+            className="mobile-link"
+            onClick={() => setMenuOpen(false)}
+          >
+            Contact
+          </Link>
         </div>
       )}
     </>
