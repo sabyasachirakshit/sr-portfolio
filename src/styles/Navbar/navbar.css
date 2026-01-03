@@ -1,5 +1,5 @@
 .navbar {
-  border-bottom: "1px solid lightgray";
+  border-bottom: 1px solid lightgray;
   display: flex;
   justify-content: space-between;
   background-color: white;
@@ -39,3 +39,27 @@
   color: inherit;
   cursor: pointer;
 }
+
+.hamburger {
+  font-size: 2rem;
+  padding: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Mobile dropdown menu */
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+}
+
+.mobile-link {
+  padding: 1rem 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+  border-top: 1px solid #eee;
+}
+
