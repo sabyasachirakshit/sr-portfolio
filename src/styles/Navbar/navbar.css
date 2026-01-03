@@ -25,3 +25,17 @@
   background: linear-gradient(90deg, rgb(99, 102, 241), rgb(34, 211, 238)) text;
   -webkit-text-fill-color: transparent;
 }
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+  padding: 1.3rem;
+}
+
+.link-style {
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}

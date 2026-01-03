@@ -2,12 +2,6 @@ import { Link } from "react-router-dom";
 import "../../styles/Navbar/navbar.css";
 
 function Navbar() {
-  const linkStyle = {
-    fontWeight: "600",
-    textDecoration: "none",
-    color: "inherit",
-    cursor: "pointer",
-  };
   return (
     <>
       <div className="navbar">
@@ -25,16 +19,16 @@ function Navbar() {
             padding: "1.3rem",
           }}
         >
-          <Link to="/" style={linkStyle}>
+          <Link to="/" className="link-style">
             Home
           </Link>
-          <Link to="/projects" style={linkStyle}>
+          <Link to="/projects" className="link-style">
             Projects
           </Link>
-          <Link to="/about" style={linkStyle}>
+          <Link to="/about" className="link-style">
             About
           </Link>
-          <Link to="/contact" style={linkStyle}>
+          <Link to="/contact" className="link-style">
             Contact
           </Link>
         </div>
