@@ -2,8 +2,15 @@ import { Link } from "react-router-dom";
 import "../../styles/Navbar/navbar.css"
 
 function Navbar() {
+  const linkStyle = {
+    fontWeight: "600",
+    textDecoration: "none",
+    color: "inherit",
+    cursor: "pointer"
+  };
   return (
-    <div className="navbar" style={{ display: "flex", justifyContent: "space-between", backgroundColor: "white", height: "12vh" }}>
+    <>
+    <div className="navbar" style={{ borderBottom:"1px solid lightgray", display: "flex", justifyContent: "space-between", backgroundColor: "white", height: "12vh" }}>
       <div
         className="heading1"
         style={{
@@ -37,13 +44,15 @@ function Navbar() {
           folio
         </span>
       </div>
-      <div className="links" style={{ display: "flex", justifyContent: "space-evenly", width: "30%", padding: "1rem" }}>
-        <Link to="/">Home</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
+      <div className="links" style={{ display: "flex", justifyContent: "space-evenly", width: "30%", padding: "1.3rem" }}>
+        <Link to="/" style={linkStyle}>Home</Link>
+        <Link to="/projects" style={linkStyle}>Projects</Link>
+        <Link to="/about" style={linkStyle}>About</Link>
+        <Link to="/contact" style={linkStyle}>Contact</Link>
       </div>
     </div>
+    </>
+    
   );
 }
 
