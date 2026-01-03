@@ -4,16 +4,17 @@ import { isMobile } from "react-device-detect";
 import "../../styles/Navbar/navbar.css";
 
 function Navbar() {
-   const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <>
       <div className="navbar">
         <div className="navbar-heading1">
           <span className="port">Port</span>
-
           <span className="folio">folio</span>
         </div>
-         {/* DESKTOP LINKS */}
+
+        {/* DESKTOP LINKS */}
         {!isMobile && (
           <div className="links">
             <Link to="/" className="link-style">Home</Link>
@@ -22,17 +23,19 @@ function Navbar() {
             <Link to="/contact" className="link-style">Contact</Link>
           </div>
         )}
-         {/* HAMBURGER ICON (MOBILE ONLY) */}
+
+        {/* MOBILE HAMBURGER / CLOSE ICON */}
         {isMobile && (
           <div
             className="hamburger"
             onClick={() => setMenuOpen(!menuOpen)}
           >
-            ☰
+            {menuOpen ? "✕" : "☰"}
           </div>
         )}
+      </div>
 
-        {/* MOBILE MENU */}
+      {/* MOBILE MENU */}
       {isMobile && menuOpen && (
         <div className="mobile-menu">
           <Link to="/" className="mobile-link" onClick={() => setMenuOpen(false)}>Home</Link>
@@ -41,7 +44,6 @@ function Navbar() {
           <Link to="/contact" className="mobile-link" onClick={() => setMenuOpen(false)}>Contact</Link>
         </div>
       )}
-      </div>
     </>
   );
 }
