@@ -1,18 +1,27 @@
-.navbar{
-    border-bottom:"1px solid lightgray";
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    height: 12vh;
+.navbar {
+  border-bottom: "1px solid lightgray";
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  height: 12vh;
 }
 
-.navbar-heading1{
-    padding: 1rem;
-    font-size: 24;
-    margin-left: 1rem;
-    color: transparent;
-    font-weight: 700;
-    color: #4f46e5;
-    letter-spacing: 0.5px;
-    display: inline-block;
+.navbar-heading1 {
+  padding: 1rem;
+  font-size: 24px;
+  margin-left: 1rem;
+  color: rgb(79, 70, 229);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
+
+.port {
+  background: linear-gradient(90deg, rgb(79, 70, 229), rgb(99, 102, 241)) text;
+  -webkit-text-fill-color: transparent;
+}
+
+.folio {
+  background: linear-gradient(90deg, rgb(99, 102, 241), rgb(34, 211, 238)) text;
+  -webkit-text-fill-color: transparent;
 }
