@@ -14,7 +14,7 @@ export default function Footer() {
         </div>
 
         {/* CENTER */}
-        <div className="footer-links">
+        <div className="footer-links" style={{paddingRight:"7rem"}}>
           <h3>Quick Links</h3>
           <ul>
             <li
