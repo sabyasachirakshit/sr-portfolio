@@ -77,6 +77,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="icon"
+              style={{color:"white"}}
               aria-label="GitHub"
             >
               <GithubOutlined />
@@ -86,6 +87,7 @@ export default function Footer() {
               href="https://www.linkedin.com/in/sabyasachi-rakshit/"
               target="_blank"
               rel="noopener noreferrer"
+              style={{color:"white"}}
               className="icon"
               aria-label="LinkedIn"
             >
@@ -95,6 +97,7 @@ export default function Footer() {
             <a
               href="mailto:sabyasachirakshitacs19@.com"
               className="icon"
+              style={{color:"white"}}
               aria-label="Email"
             >
               <MailOutlined />
