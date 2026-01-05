@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { isMobile } from "react-device-detect";
 import "../../styles/Navbar/navbar.css";
+import {
+  CloseOutlined,
+  MenuOutlined
+} from "@ant-design/icons";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -42,7 +46,7 @@ function Navbar() {
         {/* MOBILE HAMBURGER / CLOSE ICON */}
         {isMobile && (
           <div className="hamburger" onClick={toggleMenu}>
-            {menuOpen ? "✕" : "☰"}
+            {menuOpen ? <CloseOutlined /> : <MenuOutlined />}
           </div>
         )}
       </div>
