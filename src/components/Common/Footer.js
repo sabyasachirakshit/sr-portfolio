@@ -20,31 +20,47 @@ export default function Footer() {
     });
   };
   return (
-    <footer className="footer" style={isMobile?{padding:0}:{}}>
+    <footer className="footer" style={isMobile ? { padding: 0 } : {}}>
       {contextHolder}
-      <div className="footer-top" style={isMobile?{gap:0}:{}}>
+      <div className="footer-top" style={isMobile ? { gap: 40 } : {}}>
         {/* LEFT */}
-        <div className="footer-about" style={isMobile?{paddingLeft:"5%"}:{}}>
-          <h2 className="footer-name" style={!isMobile?{position:"relative",top:"-0.7rem"}:{}}>Sabyasachi</h2>
+        <div
+          className="footer-about"
+          style={isMobile ? { paddingLeft: "5%" } : {}}
+        >
+          <h2
+            className="footer-name"
+            style={!isMobile ? { position: "relative", top: "-0.7rem" } : {}}
+          >
+            Sabyasachi
+          </h2>
           <p className="footer-desc">
-            {!isMobile?(
-              <span>React.js developer with hands-on experience in building responsive
-            and component-based user interfaces using modern JavaScript (ES6+).
-            Familiar with React hooks, state management, and reusable component
-            design, with a focus on clean code and maintainable architecture and
-            making responsive web screens using media queries. Comfortable
-            working with REST APIs, version control, and modern frontend
-            workflows, and continuously improving skills through practical
-            implementation and learning.</span>
-            ):(
-              <span>React.js developer with hands-on experience in building responsive
-            and component-based user interfaces using modern JavaScript (ES6+).</span>
+            {!isMobile ? (
+              <span>
+                React.js developer with hands-on experience in building
+                responsive and component-based user interfaces using modern
+                JavaScript (ES6+). Familiar with React hooks, state management,
+                and reusable component design, with a focus on clean code and
+                maintainable architecture and making responsive web screens
+                using media queries. Comfortable working with REST APIs, version
+                control, and modern frontend workflows, and continuously
+                improving skills through practical implementation and learning.
+              </span>
+            ) : (
+              <span>
+                React.js developer with hands-on experience in building
+                responsive and component-based user interfaces using modern
+                JavaScript (ES6+).
+              </span>
             )}
           </p>
         </div>
 
         {/* CENTER */}
-        <div className="footer-links" style={!isMobile?{ paddingRight: "7rem" }:{position:"relative",left:10}}>
+        <div
+          className="footer-links"
+          style={!isMobile ? { paddingRight: "7rem" } : {}}
+        >
           <h3>Quick Links</h3>
           <ul>
             <li
@@ -56,7 +72,7 @@ export default function Footer() {
             >
               Home
             </li>
-            
+
             <li
               onClick={() =>
                 document
@@ -88,9 +104,23 @@ export default function Footer() {
         </div>
 
         {/* RIGHT */}
-        <div className="footer-connect" style={isMobile?{paddingLeft:"4rem"}:{}}>
+        <div
+          className="footer-connect"
+          style={isMobile ? { paddingRight: "10px" } : {}}
+        >
           <h3>Connect</h3>
-          <div className="social-icons" style={isMobile?{display:"flex",flexDirection:"column"}:{}}>
+          <div
+            className="social-icons"
+            style={
+              isMobile
+                ? {
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  }
+                : {}
+            }
+          >
             <a
               href="https://github.com/sabyasachirakshit"
               target="_blank"
