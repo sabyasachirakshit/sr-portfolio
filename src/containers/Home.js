@@ -8,14 +8,3 @@ export default function Home() {
   )
 }
 
-
-// function Home() {
-//   return (
-//     <main>
-//       <Hero />
-//       <AboutPreview />
-//     </main>
-//   );
-// }
-
-// export default Home;
