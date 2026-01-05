@@ -1,5 +1,6 @@
 import "../../styles/Footer/footer.css";
 import { notification } from "antd";
+import { isMobile } from "react-device-detect";
 import {
   GithubOutlined,
   LinkedinOutlined,
@@ -19,26 +20,31 @@ export default function Footer() {
     });
   };
   return (
-    <footer className="footer">
+    <footer className="footer" style={isMobile?{padding:0}:{}}>
       {contextHolder}
-      <div className="footer-top">
+      <div className="footer-top" style={isMobile?{gap:0}:{}}>
         {/* LEFT */}
-        <div className="footer-about">
-          <h2 className="footer-name">Sabyasachi</h2>
+        <div className="footer-about" style={isMobile?{paddingLeft:"5%"}:{}}>
+          <h2 className="footer-name" style={!isMobile?{position:"relative",top:"-0.7rem"}:{}}>Sabyasachi</h2>
           <p className="footer-desc">
-            React.js developer with hands-on experience in building responsive
+            {!isMobile?(
+              <span>React.js developer with hands-on experience in building responsive
             and component-based user interfaces using modern JavaScript (ES6+).
             Familiar with React hooks, state management, and reusable component
             design, with a focus on clean code and maintainable architecture and
             making responsive web screens using media queries. Comfortable
             working with REST APIs, version control, and modern frontend
             workflows, and continuously improving skills through practical
-            implementation and learning.
+            implementation and learning.</span>
+            ):(
+              <span>React.js developer with hands-on experience in building responsive
+            and component-based user interfaces using modern JavaScript (ES6+).</span>
+            )}
           </p>
         </div>
 
         {/* CENTER */}
-        <div className="footer-links" style={{ paddingRight: "7rem" }}>
+        <div className="footer-links" style={!isMobile?{ paddingRight: "7rem" }:{position:"relative",left:10}}>
           <h3>Quick Links</h3>
           <ul>
             <li
@@ -82,9 +88,9 @@ export default function Footer() {
         </div>
 
         {/* RIGHT */}
-        <div className="footer-connect">
+        <div className="footer-connect" style={isMobile?{paddingLeft:"4rem"}:{}}>
           <h3>Connect</h3>
-          <div className="social-icons">
+          <div className="social-icons" style={isMobile?{display:"flex",flexDirection:"column"}:{}}>
             <a
               href="https://github.com/sabyasachirakshit"
               target="_blank"
