@@ -1,5 +1,5 @@
 import "../../styles/Footer/footer.css";
-
+import { notification } from "antd";
 import {
   GithubOutlined,
   LinkedinOutlined,
@@ -7,8 +7,20 @@ import {
 } from "@ant-design/icons";
 
 export default function Footer() {
+  const [api, contextHolder] = notification.useNotification();
+
+  const handleEmailCopy = () => {
+    navigator.clipboard.writeText("sabyasachirakshitacs19@gmail.com");
+
+    api.success({
+      message: "Email copied",
+      description: "Email address copied to clipboard.",
+      placement: "bottomRight",
+    });
+  };
   return (
     <footer className="footer">
+      {contextHolder}
       <div className="footer-top">
         {/* LEFT */}
         <div className="footer-about">
@@ -77,7 +89,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="icon"
-              style={{color:"white"}}
+              style={{ color: "white" }}
               aria-label="GitHub"
             >
               <GithubOutlined />
@@ -87,21 +99,22 @@ export default function Footer() {
               href="https://www.linkedin.com/in/sabyasachi-rakshit/"
               target="_blank"
               rel="noopener noreferrer"
-              style={{color:"white"}}
+              style={{ color: "white" }}
               className="icon"
               aria-label="LinkedIn"
             >
               <LinkedinOutlined />
             </a>
 
-            <a
-              href="mailto:sabyasachirakshitacs19@.com"
+            <span
               className="icon"
-              style={{color:"white"}}
-              aria-label="Email"
+              style={{ color: "white", cursor: "pointer" }}
+              aria-label="Copy Email"
+              title="Click to copy email"
+              onClick={handleEmailCopy}
             >
               <MailOutlined />
-            </a>
+            </span>
           </div>
         </div>
       </div>
