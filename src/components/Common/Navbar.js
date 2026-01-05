@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { isMobile } from "react-device-detect";
 import "../../styles/Navbar/navbar.css";
 
