@@ -8,8 +8,12 @@ export default function Footer() {
         <div className="footer-about">
           <h2 className="footer-name">Sabyasachi</h2>
           <p className="footer-desc">
-            Creative Developer & Designer passionate about building beautiful
-            digital experiences.
+            React.js developer with hands-on experience in building responsive and component-based user interfaces using
+modern JavaScript (ES6+). Familiar with React hooks, state management, and reusable component design, with a
+focus on clean code and maintainable architecture and making responsive web screens using media queries.
+Comfortable working with REST APIs, version control, and modern frontend workflows, and continuously
+improving skills through practical implementation and learning.
+
           </p>
         </div>
 
