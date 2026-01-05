@@ -63,6 +63,8 @@
   padding: 1rem 2rem;
   font-weight: 600;
   text-decoration: none;
+  border: none;
+  background-color: white;
   color: inherit;
   border-top: 1px solid #eee;
 }
