@@ -106,7 +106,7 @@ export default function Footer() {
         {/* RIGHT */}
         <div
           className="footer-connect"
-          style={isMobile ? { paddingRight: "10px" } : {}}
+          style={isMobile ? { paddingRight: "20px" } : {}}
         >
           <h3>Connect</h3>
           <div
