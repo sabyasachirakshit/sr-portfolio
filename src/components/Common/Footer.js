@@ -1,5 +1,11 @@
 import "../../styles/Footer/footer.css";
 
+import {
+  GithubOutlined,
+  LinkedinOutlined,
+  MailOutlined,
+} from "@ant-design/icons";
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -8,17 +14,19 @@ export default function Footer() {
         <div className="footer-about">
           <h2 className="footer-name">Sabyasachi</h2>
           <p className="footer-desc">
-            React.js developer with hands-on experience in building responsive and component-based user interfaces using
-modern JavaScript (ES6+). Familiar with React hooks, state management, and reusable component design, with a
-focus on clean code and maintainable architecture and making responsive web screens using media queries.
-Comfortable working with REST APIs, version control, and modern frontend workflows, and continuously
-improving skills through practical implementation and learning.
-
+            React.js developer with hands-on experience in building responsive
+            and component-based user interfaces using modern JavaScript (ES6+).
+            Familiar with React hooks, state management, and reusable component
+            design, with a focus on clean code and maintainable architecture and
+            making responsive web screens using media queries. Comfortable
+            working with REST APIs, version control, and modern frontend
+            workflows, and continuously improving skills through practical
+            implementation and learning.
           </p>
         </div>
 
         {/* CENTER */}
-        <div className="footer-links" style={{paddingRight:"7rem"}}>
+        <div className="footer-links" style={{ paddingRight: "7rem" }}>
           <h3>Quick Links</h3>
           <ul>
             <li
@@ -64,9 +72,33 @@ improving skills through practical implementation and learning.
         <div className="footer-connect">
           <h3>Connect</h3>
           <div className="social-icons">
-            <span className="icon">🐙</span>
-            <span className="icon">in</span>
-            <span className="icon">✉</span>
+            <a
+              href="https://github.com/sabyasachirakshit"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon"
+              aria-label="GitHub"
+            >
+              <GithubOutlined />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/sabyasachi-rakshit/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon"
+              aria-label="LinkedIn"
+            >
+              <LinkedinOutlined />
+            </a>
+
+            <a
+              href="mailto:sabyasachirakshitacs19@.com"
+              className="icon"
+              aria-label="Email"
+            >
+              <MailOutlined />
+            </a>
           </div>
         </div>
       </div>
