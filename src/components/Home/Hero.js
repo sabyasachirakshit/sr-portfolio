@@ -5,7 +5,7 @@ import "../../styles/Home/home.css";
 
 function Hero() {
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       <h1>
         Hi, I’m <span>Sabyasachi</span>
       </h1>
