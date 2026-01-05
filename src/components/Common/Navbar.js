@@ -6,12 +6,16 @@ import "../../styles/Navbar/navbar.css";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen((prev) => !prev);
-  const NAV_LINKS = [
-    { path: "/", label: "Home" },
-    { path: "/projects", label: "Projects" },
-    { path: "/about", label: "About" },
-    { path: "/contact", label: "Contact" },
+   const NAV_LINKS = [
+    { id: "projects", label: "Projects" },
+    { id: "about", label: "About" },
+    { id: "contact", label: "Contact" }
   ];
+
+  const scrollToSection = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    setMenuOpen(false);
+  };
 
   return (
     <>
@@ -25,9 +29,13 @@ function Navbar() {
         {!isMobile && (
           <div className="links">
             {NAV_LINKS.map((link) => (
-              <Link key={link.path} to={link.path} className="link-style">
+              <button
+                key={link.id}
+                className="link-style"
+                onClick={() => scrollToSection(link.id)}
+              >
                 {link.label}
-              </Link>
+              </button>
             ))}
           </div>
         )}
@@ -44,14 +52,13 @@ function Navbar() {
       {isMobile && menuOpen && (
         <div className="mobile-menu">
           {NAV_LINKS.map((link) => (
-            <Link
-              key={link.path}
-              to={link.path}
+            <button
+              key={link.id}
               className="mobile-link"
-              onClick={toggleMenu}
+              onClick={() => scrollToSection(link.id)}
             >
               {link.label}
-            </Link>
+            </button>
           ))}
         </div>
       )}

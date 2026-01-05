@@ -1,7 +1,5 @@
-import React from 'react'
-
 export default function Footer() {
   return (
-    <div>Footer</div>
+    <div className="footer" style={{backgroundColor:"red",height:"40vh"}}>Footer</div>
   )
 }
