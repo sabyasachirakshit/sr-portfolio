@@ -50,15 +50,7 @@ export default function Footer() {
             >
               Home
             </li>
-            <li
-              onClick={() =>
-                document
-                  .getElementById("about")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              About
-            </li>
+            
             <li
               onClick={() =>
                 document
@@ -71,7 +63,16 @@ export default function Footer() {
             <li
               onClick={() =>
                 document
-                  .getElementById("contact")
+                  .getElementById("projects")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              About
+            </li>
+            <li
+              onClick={() =>
+                document
+                  .getElementById("about")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
             >

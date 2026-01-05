@@ -7,8 +7,8 @@ function Navbar() {
   const toggleMenu = () => setMenuOpen((prev) => !prev);
    const NAV_LINKS = [
     { id: "projects", label: "Projects" },
-    { id: "about", label: "About" },
-    { id: "contact", label: "Contact" }
+    { id: "projects", label: "About" },
+    { id: "about", label: "Contact" }
   ];
 
   const scrollToSection = (id) => {
