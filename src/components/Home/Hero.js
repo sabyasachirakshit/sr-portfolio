@@ -1,3 +1,6 @@
+import About from "../../containers/About";
+import Contact from "../../containers/Contact";
+import Projects from "../../containers/Projects";
 import "../../styles/Home/home.css";
 
 function Hero() {
@@ -7,15 +10,15 @@ function Hero() {
         Hi, I’m <span>Sabyasachi</span>
       </h1>
 
-      <p>
-        React Developer | UI Engineer | Problem Solver
-      </p>
+      <p>React Developer | UI Engineer | Problem Solver</p>
 
       <div className="hero-buttons">
         <button
           className="btn primary"
           onClick={() =>
-            document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })
+            document
+              .getElementById("projects")
+              ?.scrollIntoView({ behavior: "smooth" })
           }
         >
           View Projects
@@ -24,26 +27,22 @@ function Hero() {
         <button
           className="btn secondary"
           onClick={() =>
-            document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+            document
+              .getElementById("contact")
+              ?.scrollIntoView({ behavior: "smooth" })
           }
         >
           Contact Me
         </button>
       </div>
 
-      <div id="projects" className="projects">
-        <h2>Projects</h2>
-      </div>
+      <Projects />
       <hr />
 
-      <div id="about" className="about">
-        <h2>About</h2>
-      </div>
+      <About />
       <hr />
 
-      <div id="contact" className="contact">
-        <h2>Contact</h2>
-      </div>
+      <Contact />
       <hr />
     </div>
   );
