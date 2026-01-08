@@ -3,6 +3,7 @@ import Contact from "../../containers/Contact";
 import Projects from "../../containers/Projects";
 import "../../styles/Home/home.css";
 import { isMobile } from "react-device-detect";
+import cvPdf from "../../media/SabyasachiRakshit_CV.pdf";
 
 function Hero() {
   return (
@@ -55,11 +56,14 @@ function Hero() {
 
         <button
           className="btn secondary"
-          onClick={() =>
-            document
-              .getElementById("contact")
-              ?.scrollIntoView({ behavior: "smooth" })
-          }
+          onClick={() => {
+            const link = document.createElement("a");
+            link.href = cvPdf;
+            link.download = "Sabyasachi_Rakshit_CV.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          }}
         >
           Download CV
         </button>
