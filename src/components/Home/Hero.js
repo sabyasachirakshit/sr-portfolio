@@ -87,13 +87,38 @@ function Hero() {
           style={{ display: "flex", gap: "18px" }}
         >
           <div className="git">
-            <GithubOutlined style={{ fontSize: 30 }} />
+            <a
+              href="https://github.com/sabyasachirakshit"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="git"
+              style={{ color: "black" }}
+              aria-label="GitHub"
+            >
+              <GithubOutlined style={{ fontSize: 30 }} />
+            </a>
           </div>
           <div className="linkedin">
-            <LinkedinOutlined style={{ fontSize: 30 }} />
+            <a
+              href="https://www.linkedin.com/in/sabyasachi-rakshit/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="git"
+              style={{ color: "black" }}
+              aria-label="LinkedIn"
+            >
+              <LinkedinOutlined style={{ fontSize: 30 }} />
+            </a>
           </div>
           <div className="mail">
-            <MailOutlined style={{ fontSize: 30 }} />
+            <a
+              href="sabyasachirakshitacs19@gmail.com"
+              className="mail"
+              style={{ color: "black" }}
+              aria-label="Email"
+            >
+              <MailOutlined style={{ fontSize: 30 }} />
+            </a>
           </div>
         </div>
         <Projects />
