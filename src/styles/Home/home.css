@@ -68,3 +68,11 @@
 .my-social-links div:hover {
   background-color: lightskyblue;
 }
+
+#about {
+  scroll-margin-top: 64px; /* height of your navbar */
+}
+
+#home{
+   scroll-margin-top: 64px;
+}

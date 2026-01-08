@@ -89,7 +89,7 @@ export default function Footer() {
             <li
               onClick={() =>
                 document
-                  .getElementById("projects")
+                  .getElementById("about")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
             >
