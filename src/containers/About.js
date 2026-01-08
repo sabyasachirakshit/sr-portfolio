@@ -1,4 +1,5 @@
 import "../styles/About/about.css";
+import { isMobile } from "react-device-detect";
 
 export default function About() {
   return (
@@ -9,7 +10,7 @@ export default function About() {
         </div>
         <div
           className="hor-line"
-          style={{ height: "5px", width: "9%", backgroundColor: "red" }}
+          style={!isMobile?{ height: "5px", width: "9%" }:{width: "33%",height: "5px"}}
         ></div>
       </div>
 
@@ -23,6 +24,32 @@ export default function About() {
         interfaces or architecting scalable systems, I bring dedication and
         creativity to every project.
       </div>
+
+
+      {/* Stats Section */}
+      <div className="about-stats">
+        <div className="stat-item">
+          <h2>3+</h2>
+          <p id="ps">Years Experience</p>
+        </div>
+
+        <div className="stat-item">
+          <h2>20+</h2>
+          <p id="ps">Features Delivered</p>
+        </div>
+
+        <div className="stat-item">
+          <h2>15+</h2>
+          <p id="ps">Production Issues Prevented</p>
+        </div>
+
+        <div className="stat-item">
+          <h2>2</h2>
+          <p id="ps">Companies Worked With</p>
+        </div>
+      </div>
+
+
     </div>
   );
 }

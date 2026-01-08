@@ -11,3 +11,33 @@
   line-height: 30px;
   margin-top: 1.5rem;
 }
+
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+  margin-top: 3.5rem;
+}
+
+.stat-item h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#ps {
+  margin-top: 0.4rem;
+  font-size: 16px;
+  color: #475569;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .about-stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
