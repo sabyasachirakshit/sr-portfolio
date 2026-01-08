@@ -2,10 +2,15 @@ import About from "../../containers/About";
 import Contact from "../../containers/Contact";
 import Projects from "../../containers/Projects";
 import "../../styles/Home/home.css";
+import { isMobile } from "react-device-detect";
 
 function Hero() {
   return (
-    <div className="hero" id="home" style={{ marginTop: "5%" }}>
+    <div
+      className="hero"
+      id="home"
+      style={!isMobile ? { marginTop: "5%" } : { marginTop: "10%" }}
+    >
       <div
         className="welcome-tag"
         style={{
@@ -16,11 +21,15 @@ function Hero() {
         }}
       >
         <span
-          style={{
-            color: "#2563eb",
-            fontSize: "14px",
-            fontWeight: 500,
-          }}
+          style={
+            !isMobile
+              ? {
+                  color: "#2563eb",
+                  fontSize: "14px",
+                  fontWeight: 500,
+                }
+              : { color: "#2563eb", fontSize: "7px", fontWeight: 500 }
+          }
         >
           Welcome to my portfolio
         </span>
