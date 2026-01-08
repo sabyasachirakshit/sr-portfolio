@@ -86,46 +86,13 @@ function Hero() {
           className="my-social-links"
           style={{ display: "flex", gap: "18px" }}
         >
-          <div
-            className="git"
-            style={{
-              width: 42,
-              height: 42,
-              display: "flex",
-              justifyContent: "center",
-              backgroundColor: "lightgray",
-              borderRadius: 19,
-              cursor: "pointer",
-            }}
-          >
+          <div className="git">
             <GithubOutlined style={{ fontSize: 30 }} />
           </div>
-          <div
-            className="linkedin"
-            style={{
-              width: 42,
-              height: 42,
-              display: "flex",
-              justifyContent: "center",
-              backgroundColor: "lightgray",
-              borderRadius: 19,
-              cursor: "pointer",
-            }}
-          >
+          <div className="linkedin">
             <LinkedinOutlined style={{ fontSize: 30 }} />
           </div>
-          <div
-            className="mail"
-            style={{
-              width: 42,
-              height: 42,
-              display: "flex",
-              justifyContent: "center",
-              backgroundColor: "lightgray",
-              borderRadius: 19,
-              cursor: "pointer",
-            }}
-          >
+          <div className="mail">
             <MailOutlined style={{ fontSize: 30 }} />
           </div>
         </div>
