@@ -35,7 +35,7 @@ function Hero() {
       <div
         className="hero"
         id="home"
-        style={!isMobile ? { marginTop: "5%" } : { marginTop: "7%" }}
+        style={!isMobile ? { marginTop: "5%" } : { marginTop: "12%" }}
       >
         <div
           className="welcome-tag"
