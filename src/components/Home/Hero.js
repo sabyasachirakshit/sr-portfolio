@@ -37,9 +37,9 @@ function Hero() {
 
       <p>React js Developer</p>
 
-      <span>
+      <i>
         I design beautiful and responsive web page applications using React JS
-      </span>
+      </i>
 
       <div className="hero-buttons">
         <button
