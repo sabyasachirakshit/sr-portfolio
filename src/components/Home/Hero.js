@@ -5,6 +5,7 @@ import "../../styles/Home/home.css";
 import { isMobile } from "react-device-detect";
 import cvPdf from "../../media/SabyasachiRakshit_CV.pdf";
 import { notification } from "antd";
+import pic1 from "../../media/pic1.jpg";
 import {
   GithubOutlined,
   LinkedinOutlined,
@@ -84,7 +85,7 @@ function Hero() {
         </div>
         <div
           className="my-social-links"
-          style={{ display: "flex", gap: "18px" }}
+          style={{ display: "flex", gap: "18px", marginBottom: "2rem" }}
         >
           <div className="git">
             <a
@@ -120,14 +121,10 @@ function Hero() {
             </a>
           </div>
         </div>
-        <Projects />
-        <hr />
+
+        <img src={pic1} alt="pic1" style={{ borderRadius: 20 }} />
 
         <About />
-        <hr />
-
-        <Contact />
-        <hr />
       </div>
     </>
   );
