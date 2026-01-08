@@ -103,7 +103,6 @@ function Hero() {
               href="https://www.linkedin.com/in/sabyasachi-rakshit/"
               target="_blank"
               rel="noopener noreferrer"
-              className="git"
               style={{ color: "black" }}
               aria-label="LinkedIn"
             >
