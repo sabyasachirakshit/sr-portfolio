@@ -31,7 +31,7 @@ function Hero() {
         </span>
       </div>
 
-      <h1 style={isMobile ? { fontSize: "7px" } : {}}>
+      <h1 style={isMobile ? { fontSize: "23px" } : {}}>
         Hi, I’m <span>Sabyasachi Rakshit</span>
       </h1>
 
