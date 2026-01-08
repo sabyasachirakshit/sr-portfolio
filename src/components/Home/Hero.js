@@ -6,11 +6,28 @@ import "../../styles/Home/home.css";
 function Hero() {
   return (
     <div className="hero" id="home" style={{ marginTop: "5%" }}>
-      <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm">
-        Welcome to my portfolio
-      </span>
+      <div
+        className="welcome-tag"
+        style={{
+          width: "max-content",
+          padding: "8px 18px",
+          borderRadius: "999px",
+          backgroundColor: "#e6f0ff",
+        }}
+      >
+        <span
+          style={{
+            color: "#2563eb",
+            fontSize: "14px",
+            fontWeight: 500,
+          }}
+        >
+          Welcome to my portfolio
+        </span>
+      </div>
+
       <h1>
-        Hi, I’m <span>Sabyasachi</span>
+        Hi, I’m <span>Sabyasachi Rakshit</span>
       </h1>
 
       <p>React Developer | UI Engineer | Problem Solver</p>
