@@ -1,6 +1,4 @@
 import About from "../../containers/About";
-import Contact from "../../containers/Contact";
-import Projects from "../../containers/Projects";
 import "../../styles/Home/home.css";
 import { isMobile } from "react-device-detect";
 import cvPdf from "../../media/SabyasachiRakshit_CV.pdf";
@@ -11,6 +9,7 @@ import {
   LinkedinOutlined,
   MailOutlined,
 } from "@ant-design/icons";
+import SkillExpertise from "../../containers/SkillExpertise";
 
 function Hero() {
   const [api, contextHolder] = notification.useNotification();
@@ -125,6 +124,7 @@ function Hero() {
         <img src={pic1} alt="pic1" style={{ borderRadius: 20 }} />
 
         <About />
+        <SkillExpertise />
       </div>
     </>
   );
