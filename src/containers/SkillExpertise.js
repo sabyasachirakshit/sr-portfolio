@@ -14,7 +14,7 @@ export default function SkillExpertise() {
           marginTop: "2rem",
         }}
       >
-        <h1>Skills & Expertise</h1>
+        <h1 style={isMobile?{fontSize:"2rem"}:{}}>Skills & Expertise</h1>
         <div
           className="hor-line"
           style={
