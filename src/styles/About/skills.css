@@ -7,7 +7,6 @@
   );
 }
 
-
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -15,30 +14,48 @@
 }
 
 .skill-card {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 2rem 2.2rem;
+  position: relative;
+  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+  border-radius: 18px;
+  padding: 2.4rem 2.4rem;
 
-  /* Premium soft shadow */
-  box-shadow:
-    0 4px 12px rgba(15, 23, 42, 0.06),
-    0 12px 32px rgba(15, 23, 42, 0.08);
+  /* Soft, layered shadow */
+  box-shadow: 0 6px 16px rgba(79, 70, 229, 0.08),
+    0 20px 40px rgba(15, 23, 42, 0.08);
 
-  border: 1px solid rgba(15, 23, 42, 0.05);
+  border: 1px solid rgba(99, 102, 241, 0.12);
 
-  transition: 
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Subtle top gradient accent */
+.skill-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #2563eb, #4f46e5, #7c3aed);
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
 }
 
 .skill-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
 
-  box-shadow:
-    0 8px 20px rgba(15, 23, 42, 0.10),
-    0 24px 48px rgba(15, 23, 42, 0.12);
+  box-shadow: 0 12px 28px rgba(79, 70, 229, 0.15),
+    0 32px 64px rgba(15, 23, 42, 0.16);
 }
 
+.skill-card h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 1.4rem;
+  background: linear-gradient(90deg, #2563eb, #4f46e5, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .skill-card h3 {
   font-size: 20px;
@@ -48,15 +65,31 @@
 }
 
 .skill-card ul {
-  padding-left: 1.2rem;
+  padding-left: 0;
   margin: 0;
+  list-style: none;
 }
 
 .skill-card li {
-  margin-bottom: 0.55rem;
-  font-size: 15px;
-  color: #374151;
+  position: relative;
+  padding-left: 1.6rem;
+  margin-bottom: 0.65rem;
+
+  font-size: 15.5px;
+  color: #334155;
   line-height: 1.6;
+}
+
+/* Custom bullet */
+.skill-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
 }
 
 @media (max-width: 768px) {
