@@ -9,7 +9,7 @@ function Hero() {
     <div
       className="hero"
       id="home"
-      style={!isMobile ? { marginTop: "5%" } : { marginTop: "12%" }}
+      style={!isMobile ? { marginTop: "5%" } : { marginTop: "7%" }}
     >
       <div
         className="welcome-tag"
