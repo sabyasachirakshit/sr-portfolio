@@ -37,6 +37,10 @@ function Hero() {
 
       <p>React js Developer</p>
 
+      <p>
+        I design beautiful and responsive web page applications using React JS
+      </p>
+
       <div className="hero-buttons">
         <button
           className="btn primary"
