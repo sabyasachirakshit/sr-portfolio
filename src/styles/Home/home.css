@@ -11,7 +11,18 @@
 }
 
 .hero h1 span {
-  color: #4f46e5;
+  background: linear-gradient(
+    90deg,
+    #2563eb,
+    /* blue */ #4f46e5,
+    /* indigo */ #7c3aed /* violet */
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-weight: 700;
 }
 
 .hero p {
