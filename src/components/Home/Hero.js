@@ -30,7 +30,7 @@ function Hero() {
         Hi, I’m <span>Sabyasachi Rakshit</span>
       </h1>
 
-      <p>React Developer | UI Engineer | Problem Solver</p>
+      <p>React js Developer</p>
 
       <div className="hero-buttons">
         <button
