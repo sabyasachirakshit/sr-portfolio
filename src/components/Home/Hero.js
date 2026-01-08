@@ -5,6 +5,11 @@ import "../../styles/Home/home.css";
 import { isMobile } from "react-device-detect";
 import cvPdf from "../../media/SabyasachiRakshit_CV.pdf";
 import { notification } from "antd";
+import {
+  GithubOutlined,
+  LinkedinOutlined,
+  MailOutlined,
+} from "@ant-design/icons";
 
 function Hero() {
   const [api, contextHolder] = notification.useNotification();
@@ -61,7 +66,7 @@ function Hero() {
           I design beautiful and responsive web page applications using React JS
         </i>
 
-        <div className="hero-buttons">
+        <div className="hero-buttons" style={{ marginBottom: "2rem" }}>
           <button
             className="btn primary"
             onClick={() =>
@@ -77,7 +82,53 @@ function Hero() {
             Download CV
           </button>
         </div>
-
+        <div
+          className="my-social-links"
+          style={{ display: "flex", gap: "18px" }}
+        >
+          <div
+            className="git"
+            style={{
+              width: 42,
+              height: 42,
+              display: "flex",
+              justifyContent: "center",
+              backgroundColor: "lightgray",
+              borderRadius: 19,
+              cursor: "pointer",
+            }}
+          >
+            <GithubOutlined style={{ fontSize: 30 }} />
+          </div>
+          <div
+            className="linkedin"
+            style={{
+              width: 42,
+              height: 42,
+              display: "flex",
+              justifyContent: "center",
+              backgroundColor: "lightgray",
+              borderRadius: 19,
+              cursor: "pointer",
+            }}
+          >
+            <LinkedinOutlined style={{ fontSize: 30 }} />
+          </div>
+          <div
+            className="mail"
+            style={{
+              width: 42,
+              height: 42,
+              display: "flex",
+              justifyContent: "center",
+              backgroundColor: "lightgray",
+              borderRadius: 19,
+              cursor: "pointer",
+            }}
+          >
+            <MailOutlined style={{ fontSize: 30 }} />
+          </div>
+        </div>
         <Projects />
         <hr />
 
