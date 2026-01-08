@@ -37,9 +37,9 @@ function Hero() {
 
       <p>React js Developer</p>
 
-      <p>
+      <span>
         I design beautiful and responsive web page applications using React JS
-      </p>
+      </span>
 
       <div className="hero-buttons">
         <button
@@ -61,7 +61,7 @@ function Hero() {
               ?.scrollIntoView({ behavior: "smooth" })
           }
         >
-          Contact Me
+          Download CV
         </button>
       </div>
 
