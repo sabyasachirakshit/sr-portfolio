@@ -1,8 +1,13 @@
-.hor-line{
-     background: linear-gradient(
+.hor-line {
+  background: linear-gradient(
     90deg,
     #2563eb,
     /* blue */ #4f46e5,
     /* indigo */ #7c3aed /* violet */
   );
+}
+
+.desc {
+  line-height: 30px;
+  margin-top: 1.5rem;
 }
