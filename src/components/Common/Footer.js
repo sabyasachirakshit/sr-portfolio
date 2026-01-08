@@ -32,7 +32,11 @@ export default function Footer() {
             className="footer-name"
             style={!isMobile ? { position: "relative", top: "-0.7rem" } : {}}
           >
-            Sabyasachi
+            {!isMobile ? (
+              <span>Sabyasachi Rakshit</span>
+            ) : (
+              <span>Sabyasachi</span>
+            )}
           </h2>
           <p className="footer-desc">
             {!isMobile ? (
