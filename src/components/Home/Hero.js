@@ -9,7 +9,7 @@ function Hero() {
     <div
       className="hero"
       id="home"
-      style={!isMobile ? { marginTop: "5%" } : { marginTop: "10%" }}
+      style={!isMobile ? { marginTop: "5%" } : { marginTop: "12%" }}
     >
       <div
         className="welcome-tag"
@@ -21,21 +21,17 @@ function Hero() {
         }}
       >
         <span
-          style={
-            !isMobile
-              ? {
-                  color: "#2563eb",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                }
-              : { color: "#2563eb", fontSize: "7px", fontWeight: 500 }
-          }
+          style={{
+            color: "#2563eb",
+            fontSize: "14px",
+            fontWeight: 500,
+          }}
         >
           Welcome to my portfolio
         </span>
       </div>
 
-      <h1>
+      <h1 style={isMobile ? { fontSize: "7px" } : {}}>
         Hi, I’m <span>Sabyasachi Rakshit</span>
       </h1>
 
