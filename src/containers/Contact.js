@@ -1,5 +1,10 @@
 import { isMobile } from "react-device-detect";
-import "../styles/About/skills.css";
+import "../styles/About/contact.css";
+import {
+  GithubOutlined,
+  LinkedinOutlined,
+  MailOutlined,
+} from "@ant-design/icons";
 
 export default function Contact() {
   return (
@@ -45,6 +50,49 @@ export default function Contact() {
           I'm always open to discussing new projects, creative ideas, or
           opportunities to be part of your vision.
         </p>
+      </div>
+
+      <div
+        className="contact-items"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "1.6rem",
+          marginTop: "2rem",
+        }}
+      >
+        {/* Email */}
+        <div className="contact-item">
+          <div className="contact-icon email">
+            <MailOutlined />
+          </div>
+          <div className="contact-text">
+            <h4>Email</h4>
+            <span>sabyasachirakshitacs19@gmail.com</span>
+          </div>
+        </div>
+
+        {/* GitHub */}
+        <div className="contact-item">
+          <div className="contact-icon github">
+            <GithubOutlined />
+          </div>
+          <div className="contact-text">
+            <h4>GitHub</h4>
+            <span>github.com/sabyasachirakshit</span>
+          </div>
+        </div>
+
+        {/* LinkedIn */}
+        <div className="contact-item">
+          <div className="contact-icon linkedin">
+            <LinkedinOutlined />
+          </div>
+          <div className="contact-text">
+            <h4>LinkedIn</h4>
+            <span>linkedin.com/in/sabyasachi-rakshit</span>
+          </div>
+        </div>
       </div>
     </div>
   );
