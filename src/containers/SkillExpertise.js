@@ -35,9 +35,9 @@ export default function SkillExpertise() {
           <h2>Frontend Development</h2>
           <ul>
             <li>React.js (3+ years)</li>
+            <li>Redux</li>
             <li>JavaScript (ES6+)</li>
             <li>HTML5 & CSS3</li>
-            <li>Component-Based Architecture</li>
             <li>React Hooks</li>
             <li>Responsive Web Design</li>
             <li>Ant Design (AntD)</li>
