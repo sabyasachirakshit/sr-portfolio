@@ -38,7 +38,7 @@
 
 .links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   width: 30%;
   padding: 1.3rem;
 }
