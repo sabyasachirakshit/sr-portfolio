@@ -1,0 +1,112 @@
+.hor-line {
+  background: linear-gradient(
+    90deg,
+    #2563eb,
+    /* blue */ #4f46e5,
+    /* indigo */ #7c3aed /* violet */
+  );
+}
+
+.experience {
+  margin-top: 4rem;
+}
+
+.experience-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.experience-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.experience-card {
+  background: linear-gradient(180deg, #f8fbff, #ffffff);
+  border-radius: 18px;
+  padding: 2.5rem;
+
+  box-shadow:
+    0 10px 25px rgba(15, 23, 42, 0.08),
+    0 30px 60px rgba(15, 23, 42, 0.12);
+
+  border: 1px solid rgba(99, 102, 241, 0.12);
+}
+
+/* TOP */
+.exp-top {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.exp-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.exp-title h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.exp-title h3 {
+  margin: 4px 0;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.exp-meta {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* ABOUT */
+.exp-about {
+  margin-top: 2rem;
+}
+
+.exp-about h4,
+.exp-resp h4 {
+  margin-bottom: 0.6rem;
+  font-size: 18px;
+}
+
+.exp-about p {
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* RESPONSIBILITIES */
+.exp-resp {
+  margin-top: 2rem;
+}
+
+.exp-resp ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.exp-resp li {
+  position: relative;
+  padding-left: 1.6rem;
+  margin-bottom: 0.6rem;
+  color: #334155;
+}
+
+.exp-resp li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #4f46e5;
+}

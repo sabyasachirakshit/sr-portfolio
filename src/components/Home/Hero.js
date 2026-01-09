@@ -11,6 +11,7 @@ import {
 } from "@ant-design/icons";
 import SkillExpertise from "../../containers/SkillExpertise";
 import Contact from "../../containers/Contact";
+import Experience from "../../containers/Experience";
 
 function Hero() {
   const [api, contextHolder] = notification.useNotification();
@@ -126,6 +127,7 @@ function Hero() {
 
         <About />
         <SkillExpertise />
+        <Experience />
         <Contact />
       </div>
     </>

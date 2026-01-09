@@ -11,6 +11,7 @@ function Navbar() {
   const toggleMenu = () => setMenuOpen((prev) => !prev);
    const NAV_LINKS = [
     { id: "skills", label: "Skills" },
+    { id: "xp", label: "Experience" },
     { id: "about", label: "About" },
     { id: "contact", label: "Contact" }
   ];
