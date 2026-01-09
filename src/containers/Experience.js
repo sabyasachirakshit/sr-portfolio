@@ -1,6 +1,6 @@
 import { isMobile } from "react-device-detect";
 import "../styles/About/experience.css";
-import {DesktopOutlined, LinkedinOutlined} from "@ant-design/icons"
+import { DesktopOutlined, LinkedinOutlined } from "@ant-design/icons";
 
 export default function Experience() {
   return (
@@ -21,12 +21,14 @@ export default function Experience() {
       {/* EXPERIENCE CARD */}
       <div className="experience-card">
         <div className="exp-top">
-          <div className="exp-icon"><DesktopOutlined /></div>
+          <div className="exp-icon">
+            <DesktopOutlined />
+          </div>
 
           <div className="exp-title">
             <h2>React.js Developer</h2>
             <h3>Pointerz Inc. (San Francisco, California, United States)</h3>
-            <LinkedinOutlined style={{fontSize:28}}/>
+            <LinkedinOutlined style={{ fontSize: 28 }} />
             <div className="exp-meta">
               <span>Dec 2022 – Dec 2025</span>
               <span>Remote</span>
@@ -50,16 +52,122 @@ export default function Experience() {
           <h4>Key Responsibilities</h4>
 
           <ul>
-            <li>Developed scalable React.js applications using component-based architecture</li>
-            <li>Integrated RESTful APIs and WebSockets for real-time features</li>
+            <li>
+              Developed scalable React.js applications using component-based
+              architecture
+            </li>
+            <li>
+              Integrated RESTful APIs and WebSockets for real-time features
+            </li>
             <li>Designed Kanban-style boards with Drag & Drop functionality</li>
-            <li>Built dashboards and data visualizations using Ant Design and Chart.js</li>
+            <li>
+              Built dashboards and data visualizations using Ant Design and
+              Chart.js
+            </li>
             <li>Improved performance and usability across multiple modules</li>
-            <li>Debugged and fixed production issues, preventing critical failures</li>
+            <li>
+              Debugged and fixed production issues, preventing critical failures
+            </li>
             <li>Ensured fully responsive UI across all screen sizes</li>
           </ul>
         </div>
       </div>
+
+      <section id="projects" className="projects">
+        <div
+          className="sec2"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            width: "100%",
+            alignItems: "center",
+          }}
+        >
+          <h2 className="projects-title">Projects & Achievements</h2>
+          <div
+            className="hor-line"
+            style={
+              !isMobile
+                ? { height: "5px", width: "9%" }
+                : { width: "33%", height: "5px" }
+            }
+          />
+        </div>
+
+        <div className="projects-grid">
+          {/* 1 */}
+          <div className="project-card">
+            <div className="project-number">1</div>
+            <h3>Taskforce Management Module</h3>
+            <p>
+              Designed and developed a Kanban-style task management module with
+              Drag & Drop functionality, enabling teams to organize, track, and
+              manage workflows efficiently in a production environment.
+            </p>
+
+            <div className="project-tags">
+              <span>React.js</span>
+              <span>Drag & Drop</span>
+              <span>Ant Design</span>
+              <span>REST APIs</span>
+            </div>
+          </div>
+
+          {/* 2 */}
+          <div className="project-card">
+            <div className="project-number">2</div>
+            <h3>HR Performance Dashboard</h3>
+            <p>
+              Built an interactive HR dashboard to visualize employee
+              performance data using charts and tables, providing clear insights
+              for performance reviews and decision-making.
+            </p>
+
+            <div className="project-tags">
+              <span>React.js</span>
+              <span>Ant Design</span>
+              <span>Chart.js</span>
+              <span>Data Visualization</span>
+            </div>
+          </div>
+
+          {/* 3 */}
+          <div className="project-card">
+            <div className="project-number">3</div>
+            <h3>Employee Rewards System</h3>
+            <p>
+              Developed a complete rewards management module supporting reward
+              assignment, tracking, redemption, and history management,
+              improving employee engagement within the platform.
+            </p>
+
+            <div className="project-tags">
+              <span>React.js</span>
+              <span>Component Architecture</span>
+              <span>REST APIs</span>
+              <span>Pagination</span>
+            </div>
+          </div>
+
+          {/* 4 */}
+          <div className="project-card">
+            <div className="project-number">4</div>
+            <h3>Survey & Real-Time Interaction Features</h3>
+            <p>
+              Implemented dynamic survey components with real-time updates,
+              activity logs, and notice boards using WebSockets, improving user
+              interaction and system responsiveness.
+            </p>
+
+            <div className="project-tags">
+              <span>React.js</span>
+              <span>Chart.js</span>
+              <span>WebSockets</span>
+              <span>Real-Time Data</span>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
   );
 }
