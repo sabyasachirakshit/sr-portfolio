@@ -83,7 +83,9 @@ export default function Experience() {
             alignItems: "center",
           }}
         >
-          <h2 className="projects-title">Projects & Achievements</h2>
+          <div style={{ fontSize: "40px" }}>
+            <b>Projects & Achievements</b>
+          </div>
           <div
             className="hor-line"
             style={
@@ -91,14 +93,22 @@ export default function Experience() {
                 ? { height: "5px", width: "9%" }
                 : { width: "33%", height: "5px" }
             }
-          />
+          ></div>
         </div>
 
         <div className="projects-grid">
           {/* 1 */}
           <div className="project-card">
-            <div className="project-number">1</div>
-            <h3>Taskforce Management Module</h3>
+            <div
+              className="project-header"
+              style={{ display: "flex", gap: "1rem" }}
+            >
+              <div className="project-number">1</div>
+              <h3 style={{ marginTop: 5, marginBottom: 0 }}>
+                Taskforce Management Module
+              </h3>
+            </div>
+
             <p>
               Designed and developed a Kanban-style task management module with
               Drag & Drop functionality, enabling teams to organize, track, and

@@ -5,6 +5,8 @@
     /* blue */ #4f46e5,
     /* indigo */ #7c3aed /* violet */
   );
+  margin-bottom: 3rem;
+  margin-top:2rem;
 }
 
 .experience {

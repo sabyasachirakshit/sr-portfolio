@@ -1,6 +1,5 @@
 import "../styles/About/about.css";
 import { isMobile } from "react-device-detect";
-
 export default function About() {
   return (
     <div id="about" className="about" style={{ marginTop: "1rem" }}>
