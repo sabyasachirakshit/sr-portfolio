@@ -28,7 +28,7 @@ export default function Experience() {
                   ? { fontSize: 28, color: "white" }
                   : {
                       fontSize: 28,
-                      width: "34px",
+                      width: "45px",
                       color: "white",
                       justifyContent: "center",
                       display: "flex",
@@ -61,7 +61,7 @@ export default function Experience() {
 
         {/* ABOUT ROLE */}
         <div className="exp-about">
-          <h4>About the Role</h4>
+          <h4 style={{marginBottom:"1.5rem"}}>About the Role</h4>
           <p>
             Worked as a Frontend React.js Developer contributing to the design,
             development, and maintenance of scalable production-grade web
