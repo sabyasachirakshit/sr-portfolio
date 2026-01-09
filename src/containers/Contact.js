@@ -7,6 +7,10 @@ import {
 } from "@ant-design/icons";
 
 export default function Contact() {
+  const emailLink = isMobile
+    ? "mailto:sabyasachirakshitacs19@gmail.com?subject=Portfolio%20Contact&body=Hi%20Sabyasachi,%0A%0AI%20saw%20your%20portfolio%20and%20would%20like%20to%20connect."
+    : "https://mail.google.com/mail/?view=cm&fs=1&to=sabyasachirakshitacs19@gmail.com&su=Portfolio%20Contact";
+
   return (
     <div
       id="contact"
@@ -69,7 +73,9 @@ export default function Contact() {
           <div className="contact-text">
             <h4>Email</h4>
             <a
-              href="mailto:sabyasachirakshitacs19@gmail.com?subject=Portfolio%20Contact&body=Hi%20Sabyasachi,%0A%0AI%20saw%20your%20portfolio%20and%20would%20like%20to%20connect."
+              href={emailLink}
+              target={!isMobile ? "_blank" : undefined}
+              rel="noopener noreferrer"
               style={{ color: "inherit", textDecoration: "none" }}
             >
               sabyasachirakshitacs19@gmail.com

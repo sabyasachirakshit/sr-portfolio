@@ -12,7 +12,7 @@ function Navbar() {
    const NAV_LINKS = [
     { id: "skills", label: "Skills" },
     { id: "about", label: "About" },
-    { id: "about", label: "Contact" }
+    { id: "contact", label: "Contact" }
   ];
 
   const scrollToSection = (id) => {
