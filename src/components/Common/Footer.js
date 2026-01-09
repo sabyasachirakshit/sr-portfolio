@@ -86,6 +86,26 @@ export default function Footer() {
             >
               Skills
             </li>
+
+            <li
+              onClick={() =>
+                document
+                  .getElementById("xp")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              Experience
+            </li>
+
+            <li
+              onClick={() =>
+                document
+                  .getElementById("projects")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              Projects
+            </li>
             <li
               onClick={() =>
                 document
