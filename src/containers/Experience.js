@@ -125,8 +125,15 @@ export default function Experience() {
 
           {/* 2 */}
           <div className="project-card">
-            <div className="project-number">2</div>
-            <h3>HR Performance Dashboard</h3>
+            <div
+              className="project-header"
+              style={{ display: "flex", gap: "1rem" }}
+            >
+              <div className="project-number">2</div>
+              <h3 style={{ marginTop: 5, marginBottom: 0 }}>
+                HR Performance Dashboard
+              </h3>
+            </div>
             <p>
               Built an interactive HR dashboard to visualize employee
               performance data using charts and tables, providing clear insights
@@ -143,8 +150,15 @@ export default function Experience() {
 
           {/* 3 */}
           <div className="project-card">
-            <div className="project-number">3</div>
-            <h3>Employee Rewards System</h3>
+            <div
+              className="project-header"
+              style={{ display: "flex", gap: "1rem" }}
+            >
+              <div className="project-number">3</div>
+              <h3 style={{ marginTop: 5, marginBottom: 0 }}>
+                Employee Rewards System
+              </h3>
+            </div>
             <p>
               Developed a complete rewards management module supporting reward
               assignment, tracking, redemption, and history management,
@@ -161,8 +175,15 @@ export default function Experience() {
 
           {/* 4 */}
           <div className="project-card">
-            <div className="project-number">4</div>
-            <h3>Survey & Real-Time Interaction Features</h3>
+            <div
+              className="project-header"
+              style={{ display: "flex", gap: "1rem" }}
+            >
+              <div className="project-number">4</div>
+              <h3 style={{ marginTop: 5, marginBottom: 0 }}>
+                Survey & Real-Time Interaction Features
+              </h3>
+            </div>
             <p>
               Implemented dynamic survey components with real-time updates,
               activity logs, and notice boards using WebSockets, improving user
