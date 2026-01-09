@@ -137,7 +137,7 @@ export default function Experience() {
                   : {
                       display: "flex",
                       gap: "1rem",
-                      alignItems: "center",
+                      alignItems: "flex-start",
                     }
               }
             >
@@ -222,7 +222,7 @@ export default function Experience() {
                   : {
                       display: "flex",
                       gap: "1rem",
-                      alignItems: "center",
+                      alignItems: "flex-start",
                     }
               }
             >
@@ -306,7 +306,7 @@ export default function Experience() {
                   : {
                       display: "flex",
                       gap: "1rem",
-                      alignItems: "center",
+                      alignItems: "flex-start",
                     }
               }
             >
@@ -390,7 +390,7 @@ export default function Experience() {
                   : {
                       display: "flex",
                       gap: "1rem",
-                      alignItems: "center",
+                      alignItems: "flex-start",
                     }
               }
             >
@@ -476,7 +476,7 @@ export default function Experience() {
                   : {
                       display: "flex",
                       gap: "1rem",
-                      alignItems: "center",
+                      alignItems: "flex-start",
                     }
               }
             >
@@ -564,7 +564,7 @@ export default function Experience() {
                   : {
                       display: "flex",
                       gap: "1rem",
-                      alignItems: "center",
+                      alignItems: "flex-start",
                     }
               }
             >
