@@ -61,7 +61,7 @@ export default function Experience() {
 
         {/* ABOUT ROLE */}
         <div className="exp-about">
-          <h4 style={{marginBottom:"1.5rem"}}>About the Role</h4>
+          <h4 style={{ marginBottom: "1.5rem" }}>About the Role</h4>
           <p>
             Worked as a Frontend React.js Developer contributing to the design,
             development, and maintenance of scalable production-grade web
@@ -121,24 +121,83 @@ export default function Experience() {
 
         <div className="projects-grid">
           {/* 1 */}
-          <div className="project-card">
+          <div
+            className="project-card"
+            style={isMobile ? { padding: "1.5rem" } : {}}
+          >
             <div
               className="project-header"
-              style={{ display: "flex", gap: "1rem" }}
+              style={
+                isMobile
+                  ? {
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "0.5rem",
+                    }
+                  : {
+                      display: "flex",
+                      gap: "1rem",
+                      alignItems: "center",
+                    }
+              }
             >
-              <div className="project-number">1</div>
-              <h3 style={{ marginTop: 5, marginBottom: 0 }}>
+              <div
+                className="project-number"
+                style={
+                  isMobile
+                    ? {
+                        marginBottom: "0.3rem",
+                      }
+                    : {}
+                }
+              >
+                1
+              </div>
+              <h3
+                style={
+                  isMobile
+                    ? {
+                        fontSize: "16px",
+                        lineHeight: "1.4",
+                        margin: 0,
+                      }
+                    : {
+                        marginTop: 5,
+                        marginBottom: 0,
+                      }
+                }
+              >
                 Taskforce Management Module
               </h3>
             </div>
 
-            <p>
+            <p
+              style={
+                isMobile
+                  ? {
+                      fontSize: "14px",
+                      lineHeight: "1.6",
+                      marginTop: "0.8rem",
+                    }
+                  : {}
+              }
+            >
               Designed and developed a Kanban-style task management module with
               Drag & Drop functionality, enabling teams to organize, track, and
               manage workflows efficiently in a production environment.
             </p>
 
-            <div className="project-tags">
+            <div
+              className="project-tags"
+              style={
+                isMobile
+                  ? {
+                      marginTop: "0.8rem",
+                      gap: "0.4rem",
+                    }
+                  : {}
+              }
+            >
               <span>React.js</span>
               <span>Drag & Drop</span>
               <span>Ant Design</span>
@@ -147,23 +206,82 @@ export default function Experience() {
           </div>
 
           {/* 2 */}
-          <div className="project-card">
+          <div
+            className="project-card"
+            style={isMobile ? { padding: "1.5rem" } : {}}
+          >
             <div
               className="project-header"
-              style={{ display: "flex", gap: "1rem" }}
+              style={
+                isMobile
+                  ? {
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "0.5rem",
+                    }
+                  : {
+                      display: "flex",
+                      gap: "1rem",
+                      alignItems: "center",
+                    }
+              }
             >
-              <div className="project-number">2</div>
-              <h3 style={{ marginTop: 5, marginBottom: 0 }}>
+              <div
+                className="project-number"
+                style={
+                  isMobile
+                    ? {
+                        marginBottom: "0.3rem",
+                      }
+                    : {}
+                }
+              >
+                2
+              </div>
+              <h3
+                style={
+                  isMobile
+                    ? {
+                        fontSize: "16px",
+                        lineHeight: "1.4",
+                        margin: 0,
+                      }
+                    : {
+                        marginTop: 5,
+                        marginBottom: 0,
+                      }
+                }
+              >
                 HR Performance Dashboard
               </h3>
             </div>
-            <p>
+            <p
+              style={
+                isMobile
+                  ? {
+                      fontSize: "14px",
+                      lineHeight: "1.6",
+                      marginTop: "0.8rem",
+                    }
+                  : {}
+              }
+            >
               Built an interactive HR dashboard to visualize employee
               performance data using charts and tables, providing clear insights
               for performance reviews and decision-making.
             </p>
 
-            <div className="project-tags">
+            <div
+              className="project-tags"
+              style={
+                isMobile
+                  ? {
+                      marginTop: "0.8rem",
+                      gap: "0.4rem",
+                    }
+                  : {}
+              }
+            >
               <span>React.js</span>
               <span>Ant Design</span>
               <span>Chart.js</span>
@@ -172,23 +290,82 @@ export default function Experience() {
           </div>
 
           {/* 3 */}
-          <div className="project-card">
+          <div
+            className="project-card"
+            style={isMobile ? { padding: "1.5rem" } : {}}
+          >
             <div
               className="project-header"
-              style={{ display: "flex", gap: "1rem" }}
+              style={
+                isMobile
+                  ? {
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "0.5rem",
+                    }
+                  : {
+                      display: "flex",
+                      gap: "1rem",
+                      alignItems: "center",
+                    }
+              }
             >
-              <div className="project-number">3</div>
-              <h3 style={{ marginTop: 5, marginBottom: 0 }}>
+              <div
+                className="project-number"
+                style={
+                  isMobile
+                    ? {
+                        marginBottom: "0.3rem",
+                      }
+                    : {}
+                }
+              >
+                3
+              </div>
+              <h3
+                style={
+                  isMobile
+                    ? {
+                        fontSize: "16px",
+                        lineHeight: "1.4",
+                        margin: 0,
+                      }
+                    : {
+                        marginTop: 5,
+                        marginBottom: 0,
+                      }
+                }
+              >
                 Employee Rewards System
               </h3>
             </div>
-            <p>
+            <p
+              style={
+                isMobile
+                  ? {
+                      fontSize: "14px",
+                      lineHeight: "1.6",
+                      marginTop: "0.8rem",
+                    }
+                  : {}
+              }
+            >
               Developed a complete rewards management module supporting reward
               assignment, tracking, redemption, and history management,
               improving employee engagement within the platform.
             </p>
 
-            <div className="project-tags">
+            <div
+              className="project-tags"
+              style={
+                isMobile
+                  ? {
+                      marginTop: "0.8rem",
+                      gap: "0.4rem",
+                    }
+                  : {}
+              }
+            >
               <span>React.js</span>
               <span>Component Architecture</span>
               <span>REST APIs</span>
@@ -197,23 +374,84 @@ export default function Experience() {
           </div>
 
           {/* 4 */}
-          <div className="project-card">
+          <div
+            className="project-card"
+            style={isMobile ? { padding: "1.5rem" } : {}}
+          >
             <div
               className="project-header"
-              style={{ display: "flex", gap: "1rem" }}
+              style={
+                isMobile
+                  ? {
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "0.5rem",
+                    }
+                  : {
+                      display: "flex",
+                      gap: "1rem",
+                      alignItems: "center",
+                    }
+              }
             >
-              <div className="project-number">4</div>
-              <h3 style={{ marginTop: 5, marginBottom: 0 }}>
+              <div
+                className="project-number"
+                style={
+                  isMobile
+                    ? {
+                        marginBottom: "0.3rem",
+                      }
+                    : {}
+                }
+              >
+                4
+              </div>
+
+              <h3
+                style={
+                  isMobile
+                    ? {
+                        fontSize: "16px",
+                        lineHeight: "1.4",
+                        margin: 0,
+                      }
+                    : {
+                        marginTop: 5,
+                        marginBottom: 0,
+                      }
+                }
+              >
                 Survey & Real-Time Interaction Features
               </h3>
             </div>
-            <p>
+
+            <p
+              style={
+                isMobile
+                  ? {
+                      fontSize: "14px",
+                      lineHeight: "1.6",
+                      marginTop: "0.8rem",
+                    }
+                  : {}
+              }
+            >
               Implemented dynamic survey components with real-time updates,
               activity logs, and notice boards using WebSockets, improving user
               interaction and system responsiveness.
             </p>
 
-            <div className="project-tags">
+            <div
+              className="project-tags"
+              style={
+                isMobile
+                  ? {
+                      marginTop: "0.8rem",
+                      gap: "0.4rem",
+                    }
+                  : {}
+              }
+            >
               <span>React.js</span>
               <span>Chart.js</span>
               <span>WebSockets</span>
