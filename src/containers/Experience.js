@@ -22,7 +22,19 @@ export default function Experience() {
       <div className="experience-card">
         <div className="exp-top">
           <div className="exp-icon">
-            <DesktopOutlined style={{ color: "white" }} />
+            <DesktopOutlined
+              style={
+                !isMobile
+                  ? { fontSize: 28, color: "white" }
+                  : {
+                      fontSize: 28,
+                      width: "34px",
+                      color: "white",
+                      justifyContent: "center",
+                      display: "flex",
+                    }
+              }
+            />
           </div>
 
           <div className="exp-title">
