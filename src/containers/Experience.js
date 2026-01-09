@@ -458,6 +458,182 @@ export default function Experience() {
               <span>Real-Time Data</span>
             </div>
           </div>
+
+          {/* 5 */}
+          <div
+            className="project-card"
+            style={isMobile ? { padding: "1.5rem" } : {}}
+          >
+            <div
+              className="project-header"
+              style={
+                isMobile
+                  ? {
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "0.5rem",
+                    }
+                  : {
+                      display: "flex",
+                      gap: "1rem",
+                      alignItems: "center",
+                    }
+              }
+            >
+              <div
+                className="project-number"
+                style={
+                  isMobile
+                    ? {
+                        marginBottom: "0.3rem",
+                      }
+                    : {}
+                }
+              >
+                5
+              </div>
+
+              <h3
+                style={
+                  isMobile
+                    ? {
+                        fontSize: "16px",
+                        lineHeight: "1.4",
+                        margin: 0,
+                      }
+                    : {
+                        marginTop: 5,
+                        marginBottom: 0,
+                      }
+                }
+              >
+                Push Notification System (Firebase FCM)
+              </h3>
+            </div>
+
+            <p
+              style={
+                isMobile
+                  ? {
+                      fontSize: "14px",
+                      lineHeight: "1.6",
+                      marginTop: "0.8rem",
+                    }
+                  : {}
+              }
+            >
+              Designed and implemented scheduled and targeted push notification
+              functionality using Firebase Cloud Messaging (FCM), including
+              token generation, secure storage, and trigger logic, enabling
+              real-time user notifications across the application.
+            </p>
+
+            <div
+              className="project-tags"
+              style={
+                isMobile
+                  ? {
+                      marginTop: "0.8rem",
+                      gap: "0.4rem",
+                    }
+                  : {}
+              }
+            >
+              <span>Firebase (FCM)</span>
+              <span>Push Notifications</span>
+              <span>FlutterFlow</span>
+              <span>Supabase</span>
+              <span>Real-Time Updates</span>
+            </div>
+          </div>
+
+          {/* 6 */}
+          <div
+            className="project-card"
+            style={isMobile ? { padding: "1.5rem" } : {}}
+          >
+            <div
+              className="project-header"
+              style={
+                isMobile
+                  ? {
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "0.5rem",
+                    }
+                  : {
+                      display: "flex",
+                      gap: "1rem",
+                      alignItems: "center",
+                    }
+              }
+            >
+              <div
+                className="project-number"
+                style={
+                  isMobile
+                    ? {
+                        marginBottom: "0.3rem",
+                      }
+                    : {}
+                }
+              >
+                6
+              </div>
+
+              <h3
+                style={
+                  isMobile
+                    ? {
+                        fontSize: "16px",
+                        lineHeight: "1.4",
+                        margin: 0,
+                      }
+                    : {
+                        marginTop: 5,
+                        marginBottom: 0,
+                      }
+                }
+              >
+                Automation & Web Testing Scripts
+              </h3>
+            </div>
+
+            <p
+              style={
+                isMobile
+                  ? {
+                      fontSize: "14px",
+                      lineHeight: "1.6",
+                      marginTop: "0.8rem",
+                    }
+                  : {}
+              }
+            >
+              Developed Python automation scripts using Selenium WebDriver to
+              automate form submissions, survey workflows, and repetitive
+              browser-based tasks. Used for testing, data validation, and
+              improving operational efficiency.
+            </p>
+
+            <div
+              className="project-tags"
+              style={
+                isMobile
+                  ? {
+                      marginTop: "0.8rem",
+                      gap: "0.4rem",
+                    }
+                  : {}
+              }
+            >
+              <span>Python</span>
+              <span>Selenium WebDriver</span>
+              <span>Automation</span>
+              <span>Form Testing</span>
+              <span>QA Support</span>
+            </div>
+          </div>
         </div>
       </section>
     </section>
