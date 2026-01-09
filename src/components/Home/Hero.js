@@ -10,6 +10,7 @@ import {
   MailOutlined,
 } from "@ant-design/icons";
 import SkillExpertise from "../../containers/SkillExpertise";
+import Contact from "../../containers/Contact";
 
 function Hero() {
   const [api, contextHolder] = notification.useNotification();
@@ -125,6 +126,7 @@ function Hero() {
 
         <About />
         <SkillExpertise />
+        <Contact />
       </div>
     </>
   );
