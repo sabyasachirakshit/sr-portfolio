@@ -15,11 +15,11 @@ export default function About() {
       </div>
 
       <div className="desc">
-        I'm a passionate React.js developer with over 3 years of experience
+        I'm a React.js developer with over 3 years of experience
         building web applications that combine beautiful design with powerful
         functionality. My journey in tech started with a curiosity about how
         things work, and has evolved into a career focused on creating
-        responsive beautiful web applicationbs. I specialize in modern web technologies
+        responsive beautiful web applications. I specialize in modern web technologies
         and have a keen eye for design. Whether it's crafting pixel-perfect
         interfaces or architecting scalable systems, I bring dedication and
         creativity to every project.
@@ -44,7 +44,7 @@ export default function About() {
         </div>
 
         <div className="stat-item">
-          <h2>2</h2>
+          <h2>1</h2>
           <p id="ps">Companies Worked With</p>
         </div>
       </div>
