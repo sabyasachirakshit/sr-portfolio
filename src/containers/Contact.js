@@ -68,7 +68,12 @@ export default function Contact() {
           </div>
           <div className="contact-text">
             <h4>Email</h4>
-            <span>sabyasachirakshitacs19@gmail.com</span>
+            <a
+              href="mailto:sabyasachirakshitacs19@gmail.com?subject=Portfolio%20Contact&body=Hi%20Sabyasachi,%0A%0AI%20saw%20your%20portfolio%20and%20would%20like%20to%20connect."
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              sabyasachirakshitacs19@gmail.com
+            </a>
           </div>
         </div>
 
@@ -79,7 +84,14 @@ export default function Contact() {
           </div>
           <div className="contact-text">
             <h4>GitHub</h4>
-            <a id="link1" href="https://github.com/sabyasachirakshit/" target="_blank" rel="noreferrer">github.com/sabyasachirakshit</a>
+            <a
+              id="link1"
+              href="https://github.com/sabyasachirakshit/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              github.com/sabyasachirakshit
+            </a>
           </div>
         </div>
 
@@ -90,7 +102,14 @@ export default function Contact() {
           </div>
           <div className="contact-text">
             <h4>LinkedIn</h4>
-            <a id="link2" href="https://www.linkedin.com/in/sabyasachi-rakshit/" target="_blank" rel="noreferrer">linkedin.com/in/sabyasachi-rakshit</a>
+            <a
+              id="link2"
+              href="https://www.linkedin.com/in/sabyasachi-rakshit/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              linkedin.com/in/sabyasachi-rakshit
+            </a>
           </div>
         </div>
       </div>
