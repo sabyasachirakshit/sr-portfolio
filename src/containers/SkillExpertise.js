@@ -5,6 +5,7 @@ export default function SkillExpertise() {
     <div>
       <div
         className="skill-heading"
+        id="skills"
         style={{
           display: "flex",
           width: "100%",

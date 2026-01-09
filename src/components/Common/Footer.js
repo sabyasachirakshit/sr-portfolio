@@ -80,11 +80,11 @@ export default function Footer() {
             <li
               onClick={() =>
                 document
-                  .getElementById("projects")
+                  .getElementById("skills")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
             >
-              Projects
+              Skills
             </li>
             <li
               onClick={() =>

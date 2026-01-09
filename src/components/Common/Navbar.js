@@ -10,7 +10,7 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen((prev) => !prev);
    const NAV_LINKS = [
-    { id: "projects", label: "Projects" },
+    { id: "skills", label: "Skills" },
     { id: "about", label: "About" },
     { id: "about", label: "Contact" }
   ];
