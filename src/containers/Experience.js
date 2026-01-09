@@ -22,13 +22,24 @@ export default function Experience() {
       <div className="experience-card">
         <div className="exp-top">
           <div className="exp-icon">
-            <DesktopOutlined />
+            <DesktopOutlined style={{ color: "white" }} />
           </div>
 
           <div className="exp-title">
             <h2>React.js Developer</h2>
             <h3>Pointerz Inc. (San Francisco, California, United States)</h3>
-            <LinkedinOutlined style={{ fontSize: 28 }} />
+            <a
+              style={{ color: "blueviolet", cursor: "pointer" }}
+              href="https://www.linkedin.com/company/pointerz-inc/posts/?feedView=all"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <LinkedinOutlined
+                style={
+                  !isMobile ? { fontSize: 28 } : { fontSize: 28, width: "34px" }
+                }
+              />
+            </a>
             <div className="exp-meta">
               <span>Dec 2022 – Dec 2025</span>
               <span>Remote</span>
