@@ -98,7 +98,7 @@ export default function Footer() {
             <li
               onClick={() =>
                 document
-                  .getElementById("about")
+                  .getElementById("contact")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
             >
