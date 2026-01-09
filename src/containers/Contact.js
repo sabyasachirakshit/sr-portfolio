@@ -79,7 +79,7 @@ export default function Contact() {
           </div>
           <div className="contact-text">
             <h4>GitHub</h4>
-            <span>github.com/sabyasachirakshit</span>
+            <a id="link1" href="https://github.com/sabyasachirakshit/" target="_blank" rel="noreferrer">github.com/sabyasachirakshit</a>
           </div>
         </div>
 
@@ -90,7 +90,7 @@ export default function Contact() {
           </div>
           <div className="contact-text">
             <h4>LinkedIn</h4>
-            <span>linkedin.com/in/sabyasachi-rakshit</span>
+            <a id="link2" href="https://www.linkedin.com/in/sabyasachi-rakshit/" target="_blank" rel="noreferrer">linkedin.com/in/sabyasachi-rakshit</a>
           </div>
         </div>
       </div>
